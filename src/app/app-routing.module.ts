@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MonthlyComponent } from './barCharts/monthly/monthly.component';
+import { MonthlyComponent } from './BarCharts/monthly/monthly.component';
 
 const routes: Routes = [
   {path: '', component: MonthlyComponent}
