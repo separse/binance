@@ -8,6 +8,8 @@ import { MonthlyComponent } from './BarCharts/monthly/monthly.component';
 import { HeaderComponent } from './Header/header/header.component';
 import { OrderBookComponent } from './Trades/order-book/order-book.component';
 import { NegativeOrdersComponent } from './Trades/negative-orders/negative-orders.component';
+import { OpenPositionComponent } from './Positions/open-position/open-position.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { NegativeOrdersComponent } from './Trades/negative-orders/negative-order
     MonthlyComponent,
     HeaderComponent,
     OrderBookComponent,
-    NegativeOrdersComponent
+    NegativeOrdersComponent,
+    OpenPositionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,29 @@
-<ul class="nav nav-tabs">
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <a ngbNavLink>Monthly</a>
+    <ng-template ngbNavContent>
+      <app-monthly></app-monthly>
+    </ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Weekly</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Daily</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>1Hour</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>1minute</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
+<!-- <ul class="nav nav-tabs">
   <li class="nav-item" class="nav-link">Time</li>
   <li class="nav-item"><a routerLink="" class="nav-link">Minute</a></li>
   <li class="nav-item"><a routerLink="" class="nav-link">Hour</a></li>
@@ -6,4 +31,4 @@
   <li class="nav-item"><a routerLink="" class="nav-link">W</a></li>
   <li class="nav-item"><a routerLink="" class="nav-link">M</a></li>
 </ul>
-<app-monthly></app-monthly>
+<app-monthly></app-monthly> -->
